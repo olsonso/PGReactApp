@@ -1,0 +1,7 @@
+{
+"Classes":[
+    {"Day":"John", "Type":"Doe"}, 
+    {"Day":"Anna", "Type":"Smith"},
+    {"Day":"Peter", "Type":"Jones"}
+]
+}

@@ -26,6 +26,7 @@
     "react": "16.2.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
     "react-native-calendars": "^1.17.3",
+    "react-native-maps": "^0.20.1",
     "react-native-node": "^3.3.1"
   }
 }

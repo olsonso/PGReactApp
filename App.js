@@ -5,6 +5,7 @@ import {
   StyleSheet,
   StatusBar,
   View,
+  ActivityIndicator
 } from 'react-native';
 import Calendar from './src/calendar/Calendar';
 import faker from 'faker';
@@ -12,6 +13,8 @@ import moment from 'moment';
 import Events from './src/events/Events';
 import type Moment from 'moment';
 
+// var customData = require('./customData.json');
+// import sample from 'customData.json';
 
 export type EventType = {
   date: Moment,
@@ -66,7 +69,7 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue',
-    paddingTop: 20,
+    backgroundColor: 'green',
+    paddingTop: 25,
   },
 });
