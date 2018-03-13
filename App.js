@@ -12,6 +12,7 @@ import moment from 'moment';
 import Events from './src/events/Events';
 import type Moment from 'moment';
 
+
 export type EventType = {
   date: Moment,
   title: string,
@@ -39,10 +40,14 @@ export default class App extends React.Component {
    state = {
     events: filterEvents(moment()),
   };
+  
+
 
   onSelectDate = (date: Moment) => {
         this.setState({ events: filterEvents(date) });
   };
+
+
 
   render() {
       const { events } = this.state;  
