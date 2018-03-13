@@ -41,6 +41,8 @@ class HomeScreen extends React.Component {
    state = {
     events: filterEvents(moment()),
   };
+
+
   
 
 
@@ -67,13 +69,24 @@ class HomeScreen extends React.Component {
 export default TabNavigator({
   Home: {
     screen: HomeScreen,
-  },
+     tabBarLabel: 'ScreenOne',
+     tabBarIcon: ({ tintColor }) => (
+      <Image
+        source={require('./images/home-icon.png')}
+        style={[styles.icon, { tintColor: tintColor }]}/>
+      )}
 });
 
 const RootStack = TabNavigator(
   {
-    Home: {
+    Home1: {
       screen: HomeScreen,
+      tabBarIcon: ({ tintColor }) => (
+      <Image
+        source={require('./images/home-icon.png')}
+        style={[styles.icon, { tintColor: tintColor }]}/>
+      )
+
     },
   
   },{
@@ -85,9 +98,6 @@ const RootStack = TabNavigator(
     }
   }
 });
-
-
-
 
 const styles = StyleSheet.create({
   container: {
